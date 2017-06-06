@@ -1,0 +1,20 @@
+<h1>Enter your information!</h1>
+<form (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label>First Name:</label><input [(ngModel)]="user.firstName" name="first" class="form-control" type="text" >  
+  </div>
+
+  <div class="form-group">
+    <label>Last Name:</label><input [(ngModel)]="user.lastName" name="last" class="form-control" type="text">  
+  </div>
+
+  <div class="form-group">
+    <label>Favorite Color:</label><input [(ngModel)]="user.favoriteColor" name="color" class="form-control" type="text">  
+  </div>
+
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
+
+<h2 *ngIf="summary">{{summary}}</h2>
+
+
